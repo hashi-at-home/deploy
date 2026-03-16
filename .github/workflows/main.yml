@@ -9,6 +9,8 @@ on:
 jobs:
    release:
      runs-on: ubuntu-latest
+     env:
+       MISE_ENV: ci
      steps:
        - name: Checkout code
          uses: actions/checkout@v6

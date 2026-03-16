@@ -1,0 +1,9 @@
+# Development environment for Hashi@Home deployment.
+[settings]
+auto_install = true
+
+[tools]
+node = "24"
+
+[tasks.release]
+run = "semantic-release"
