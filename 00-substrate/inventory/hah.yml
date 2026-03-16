@@ -1,0 +1,45 @@
+---
+# Inventory for Hashi at Home
+
+# hardware-based groups
+minipc:
+  hosts:
+    monolith:
+sense_hats:
+  hosts:
+    sense:
+scroll_hats:
+  hosts:
+    frontpi:
+    wallpi:
+pi3s:
+  hosts:
+    pi3:
+    inky:
+    octopi:
+pi4s:
+  hosts:
+    sense:
+    bare:
+pi5s:
+  hosts:
+    cape:
+    ticklish:
+
+# Form-factor groups
+compute_pis:
+  hosts:
+    turing[1:7]:
+pizeros:
+  hosts:
+    frontpi:
+    wallpi:
+    spy:
+
+pis:
+  children:
+    compute_pis:
+    pizeros:
+    pi3s:
+    pi4s:
+    pi5s:

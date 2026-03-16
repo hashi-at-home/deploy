@@ -1,0 +1,18 @@
+# Availability Zones
+az_north:
+  hosts:
+    inky:
+    sense:
+    wallpi:
+    spy:
+    monolith:
+az_west:
+  hosts:
+    bare:
+    pi3:
+    octopi:
+    cape:
+az_sw:
+  hosts:
+    ticklish:
+    frontpi:
