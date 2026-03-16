@@ -1,0 +1,20 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+   release:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout code
+         uses: actions/checkout@v6
+       - name: Enable Mise
+         uses: jdx/mise-action@v3
+         with:
+           install: true
+           experimental: true
+           cache: true
