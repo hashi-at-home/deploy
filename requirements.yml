@@ -1,0 +1,8 @@
+---
+# Ansible collection requirements file
+# Collections
+
+# Roles
+- src: https://github.com/brucellino/ansible-role-consul
+  version: main
+  name: consul-agent

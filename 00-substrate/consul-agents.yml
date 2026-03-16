@@ -1,0 +1,6 @@
+# Playbook to configure Consul agents on substrate
+- name: Configure Consul agents on substrate
+  hosts: consul_agents
+  become: true
+  roles:
+     - consul-agent

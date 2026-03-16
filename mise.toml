@@ -1,0 +1,22 @@
+# Development environment for Hashi@Home deployment.
+[settings]
+auto_install = true
+
+[env]
+_.python.venv = {path = ".venv", create = true }
+
+[tools]
+prek = "0.3.5"
+terraform = "1.14.7"
+trivy = "0.69.3"
+python = "3.13"
+uv = "0.10.10"
+
+[tasks.deps]
+description = "Install dependencies"
+run = "uv pip install -r requirements.txt"
+
+[tasks.collections]
+depends = ["deps"]
+description = "Install collections"
+run = "ansible-galaxy install -r requirements.yml"
