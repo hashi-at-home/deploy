@@ -4,6 +4,7 @@ auto_install = true
 
 [env]
 _.python.venv = {path = ".venv", create = true }
+INTERPRETER_PYTHON_FALLBACK="/usr/bin/python3 "
 
 [tools]
 prek = "0.3.5"
@@ -19,4 +20,4 @@ run = "uv pip install -r requirements.txt"
 [tasks.collections]
 depends = ["deps"]
 description = "Install collections"
-run = "ansible-galaxy install -r requirements.yml"
+run = "ansible-galaxy install -f -r requirements.yml"

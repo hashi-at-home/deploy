@@ -1,6 +1,9 @@
 # Playbook to configure Consul agents on substrate
 - name: Configure Consul agents on substrate
-  hosts: consul_agents
+  hosts: consul_agents,!consul_servers
   become: true
   roles:
-     - consul-agent
+     - role: consul-agent
+       consul_version: 1.21.1
+       is_server: false
+       vault_addr: 100.122.119.73:8200

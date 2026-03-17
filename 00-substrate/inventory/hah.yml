@@ -2,7 +2,7 @@
 # Inventory for Hashi at Home
 
 # hardware-based groups
-minipc:
+minipcs:
   hosts:
     monolith:
 sense_hats:
@@ -35,6 +35,8 @@ pizeros:
     frontpi:
     wallpi:
     spy:
+  vars:
+    consul_version: 1.17.1 # Consul version for armv6l has ceiling of 1.17.1
 
 pis:
   children:
