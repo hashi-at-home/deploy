@@ -9,7 +9,7 @@ INTERPRETER_PYTHON_FALLBACK="/usr/bin/python3 "
 [tools]
 prek = "0.3.5"
 terraform = "1.14.7"
-trivy = "0.69.3"
+trivy = "0.69.4"
 python = "3.13"
 uv = "0.10.10"
 
