@@ -3,7 +3,7 @@
 auto_install = true
 
 [tools]
-node = "24"
+node = "26"
 
 [tasks.release]
 run = "semantic-release"
