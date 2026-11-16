@@ -7,7 +7,7 @@ _.python.venv = {path = ".venv", create = true }
 INTERPRETER_PYTHON_FALLBACK="/usr/bin/python3 "
 
 [tools]
-prek = "0.5.10"
+prek = "0.5.11"
 terraform = "1.17.2"
 trivy = "0.76.2"
 python = "3.15.2"
