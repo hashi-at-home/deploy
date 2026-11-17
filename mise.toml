@@ -11,7 +11,7 @@ prek = "0.5.11"
 terraform = "1.17.2"
 trivy = "0.76.2"
 python = "3.15.2"
-uv = "0.13.8"
+uv = "0.13.9"
 
 [tasks.deps]
 description = "Install dependencies"
